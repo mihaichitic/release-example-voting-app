@@ -13,7 +13,7 @@ services:
       - "db"
 
   result:
-    image: mihaichitic/release-example-voting-app/result
+    image: node:latest
     command: 
     - nodemon 
     - server.js
