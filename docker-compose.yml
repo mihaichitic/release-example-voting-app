@@ -13,7 +13,7 @@ services:
       - "db"
 
   result:
-    build: ./result
+    image: mihaichitic/release-example-voting-app/result
     command: 
     - nodemon 
     - server.js
@@ -26,6 +26,8 @@ services:
   worker:
     build:
       context: ./worker
+    ports:
+      - "5002:8080"
     depends_on:
       - "redis"
       - "db"
