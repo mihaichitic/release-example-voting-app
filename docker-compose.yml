@@ -14,9 +14,6 @@ services:
 
   result:
     image: node:latest
-    command: 
-    - nodemon 
-    - server.js
     ports:
       - "5001:80"
     depends_on:
