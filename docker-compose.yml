@@ -34,4 +34,4 @@ services:
     image: redis:alpine
 
   db:
-    image: postgres:9.4
+    image: postgres:latest
